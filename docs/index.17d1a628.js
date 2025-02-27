@@ -1,0 +1,2 @@
+const e=document.querySelector("body"),t=document.createElement("div");e.appendChild(t),t.classList.add("container");const n=document.createElement("h1");t.append(n);const c=["Welcome","to","direct","entry","Program"];let o=0,r=0,d=0,l=!1;setInterval(()=>{(l||d++%2==0)&&(n.innerText=c[o].substring(0,l?r--:r++),r===c[o].length+4?(l=!0,r=c[o].length):0===r&&(l=!1,d=0,++o===c.length&&(o=0)))},75);
+//# sourceMappingURL=index.17d1a628.js.map

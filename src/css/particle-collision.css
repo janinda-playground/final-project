@@ -1,0 +1,29 @@
+body {
+    overflow: hidden;
+    cursor: none;
+}
+
+.cursor {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(205, 71, 71, 0.85);
+    border-radius: 50%;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 500ms, purple 500ms;
+    animation: cursor 500ms infinite;
+}
+
+.fade {
+    opacity: 0;
+}
+
+@keyframes cursor {
+    from {
+        box-shadow: 0 0 4px 0 rgba(255, 0, 242, 0.4);
+    }
+
+    to {
+        box-shadow: 0 0 4px 8px rgba(255, 0, 242, 0.4);
+    }
+}

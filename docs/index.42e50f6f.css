@@ -1,0 +1,2 @@
+body{cursor:none;overflow:hidden}.cursor{opacity:1;background-color:#cd4747d9;border-radius:50%;width:100px;height:100px;transition:opacity .5s,purple .5s;animation:.5s infinite cursor;position:absolute}.fade{opacity:0}@keyframes cursor{0%{box-shadow:0 0 4px #ff00f266}to{box-shadow:0 0 4px 8px #ff00f266}}
+/*# sourceMappingURL=index.42e50f6f.css.map */
