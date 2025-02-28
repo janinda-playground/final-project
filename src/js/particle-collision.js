@@ -92,8 +92,8 @@ addEventListener('mouseout', () => {
 addEventListener('touchmove', (e) => {
     if (tmrId) clearTimeout(tmrId);
     cursorElm.style.opacity = '1';
-    cursorElm.style.left = `${e.clientX - cursorElm.offsetWidth / 2}px`;
-    cursorElm.style.top = `${e.clientY - cursorElm.offsetHeight / 2}px`;
+    cursorElm.style.left = `${e.changedTouches[0].clientX - cursorElm.offsetWidth / 2}px`;
+    cursorElm.style.top = `${e.changedTouches[0].clientY - cursorElm.offsetHeight / 2}px`;
 
     setTimeout(() => {
         if (e.movementX === 0 && e.movementY === 0) {
