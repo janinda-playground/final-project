@@ -89,4 +89,18 @@ addEventListener('mouseout', () => {
     // cursorElm.style.opacity = '0';
 });
 
+addEventListener('touchmove', (e) => {
+    if (tmrId) clearTimeout(tmrId);
+    cursorElm.style.opacity = '1';
+    cursorElm.style.left = `${e.clientX - cursorElm.offsetWidth / 2}px`;
+    cursorElm.style.top = `${e.clientY - cursorElm.offsetHeight / 2}px`;
+
+    setTimeout(() => {
+        if (e.movementX === 0 && e.movementY === 0) {
+            cursorElm.style.opacity = '0';
+            // cursorElm.style.display = 'none';
+        }
+    }, 4000)
+});
+
 

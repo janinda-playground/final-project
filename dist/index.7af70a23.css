@@ -1,0 +1,40 @@
+.container {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+}
+
+.app, h1 {
+  font-family: Pacifico, serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  &:after {
+    content: "";
+    vertical-align: text-top;
+    width: 15px;
+    height: 1em;
+    margin-left: 2px;
+    animation-name: blink;
+    animation-duration: .25s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+    background-color: #000;
+  }
+
+  25% {
+    background-color: #00f;
+  }
+
+  80% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=index.7af70a23.css.map */
